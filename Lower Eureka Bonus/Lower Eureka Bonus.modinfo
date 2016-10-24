@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="54a58bee-c255-45b4-ae34-5861c1154f17">
+	<Properties>
+		<Name>Lower Eureka Bonus</Name>
+		<Stability>Beta</Stability>
+		<Teaser>Lower Eureka Bonus</Teaser>
+		<Description>Reduces Eureka bonus from 50% -> 40%</Description>
+		<Authors>Cameron Probert</Authors>
+	</Properties>
+	<Files>
+		<File>Rules.sql</File>
+	</Files>  
+	<Settings>
+		<Custom id="LowerEurekaBonus">
+			<Items>
+				<Component>LowerEurekaBonusComponent</Component>
+			</Items>
+		</Custom>
+	</Settings>	
+	<Components>
+		<UpdateDatabase id="LowerEurekaBonus">
+			<Properties>
+				<Name>Lower Eureka Bonus</Name>
+			</Properties>
+			<Items>
+				<File>Rules.sql</File>
+			</Items>
+		</UpdateDatabase>
+	</Components>
+</Mod>
