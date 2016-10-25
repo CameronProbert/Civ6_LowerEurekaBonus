@@ -3,14 +3,7 @@
 	by Cameron Probert (2016)
 */
 
--- Set the technology Eureka bonus
+-- Set the Eureka bonus
 -- Original value = 50
 UPDATE Boosts 
-	SET Boost = 40
-	WHERE CivicType = 'CIVIC_%';
-
--- Set the civic Eureka bonus
--- Original value = 50
-UPDATE Boosts 
-	SET Boost = 40
-	WHERE CivicType = 'TECH_%';
+	SET Boost = Boost*4/5;
